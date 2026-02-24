@@ -361,6 +361,7 @@ nav {
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   aspect-ratio: 16 / 9;
+  /* Intro card remains 16:9 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,6 +595,7 @@ nav {
 
 .video-thumb {
   aspect-ratio: 9 / 16;
+  /* Portfolio items are 9:16 */
   background: #d0c4b4;
   border-radius: 12px;
   position: relative;

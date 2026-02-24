@@ -6,6 +6,7 @@ import cafe2 from "./Cafe Content/cafe_2.mp4";
 import cafe3 from "./Cafe Content/cafe_3.mp4";
 import cafe4 from "./Cafe Content/cafe_4.mp4";
 import cafe5 from "./Cafe Content/cafe_5.mp4";
+import introVideo from "./Intro/intro.mp4";
 
 import brand1 from "./Brands/Picsart_26-02-20_12-22-19-143.jpg.jpeg";
 import brand2 from "./Brands/Picsart_26-02-20_12-24-21-015.jpg.jpeg";
@@ -198,12 +199,15 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="video-embed">
-            <div className="play-btn">▶</div>
-            <p>A BIT ABOUT ME</p>
-            <p style={{ fontSize: "10px", color: "rgba(255,255,255,0.2)" }}>
-              Watch my intro video on YouTube
-            </p>
+          <div className="video-embed" style={{ padding: 0, overflow: 'hidden' }}>
+            <video
+              src={introVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
           </div>
           <div>
             <div className="analytics-grid">
