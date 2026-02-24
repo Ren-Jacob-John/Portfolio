@@ -7,6 +7,43 @@ import cafe3 from "./Cafe Content/cafe_3.mp4";
 import cafe4 from "./Cafe Content/cafe_4.mp4";
 import cafe5 from "./Cafe Content/cafe_5.mp4";
 
+import brand1 from "./Brands/Picsart_26-02-20_12-22-19-143.jpg.jpeg";
+import brand2 from "./Brands/Picsart_26-02-20_12-24-21-015.jpg.jpeg";
+import brand3 from "./Brands/Picsart_26-02-20_12-26-38-852.jpg.jpeg";
+import brand4 from "./Brands/Picsart_26-02-20_12-28-17-115.png";
+import brand5 from "./Brands/Picsart_26-02-20_12-30-23-316.jpg.jpeg";
+import brand6 from "./Brands/Picsart_26-02-20_12-34-11-670.jpg.jpeg";
+import brand7 from "./Brands/Picsart_26-02-20_12-35-05-284.jpg.jpeg";
+import brand8 from "./Brands/Picsart_26-02-20_12-39-42-516.jpg.jpeg";
+import brand9 from "./Brands/Picsart_26-02-20_12-51-45-636.jpg (1).jpeg";
+import brand10 from "./Brands/Picsart_26-02-20_12-53-45-234.jpg.jpeg";
+import brand11 from "./Brands/Picsart_26-02-20_12-55-30-651.jpg.jpeg";
+import brand12 from "./Brands/Picsart_26-02-20_12-57-55-379.jpg.jpeg";
+import brand13 from "./Brands/Picsart_26-02-20_12-59-48-667.jpg.jpeg";
+import brand14 from "./Brands/Picsart_26-02-20_13-01-44-210.jpg.jpeg";
+import brand15 from "./Brands/Picsart_26-02-20_13-11-56-135.png";
+import brand16 from "./Brands/Picsart_26-02-20_13-13-55-320 (1).png";
+import brand17 from "./Brands/Picsart_26-02-20_13-16-12-487 (1).png";
+import brand18 from "./Brands/Picsart_26-02-20_13-55-47-859 (1).png";
+import brand19 from "./Brands/Picsart_26-02-20_13-56-24-761.png";
+import brand20 from "./Brands/Picsart_26-02-20_13-57-57-901 (1).png";
+import brand21 from "./Brands/Picsart_26-02-20_14-07-26-504.jpg (1).jpeg";
+import brand22 from "./Brands/Picsart_26-02-20_14-11-41-610 (1).png";
+import brand23 from "./Brands/Picsart_26-02-20_14-14-40-335.png";
+import brand24 from "./Brands/Picsart_26-02-20_14-17-34-465.png";
+import brand25 from "./Brands/Picsart_26-02-20_14-23-11-465 (1).png";
+import brand26 from "./Brands/Picsart_26-02-20_14-30-51-791.png";
+import brand27 from "./Brands/Picsart_26-02-20_14-34-28-568 (1).png";
+import brand28 from "./Brands/Picsart_26-02-20_14-37-46-848.png";
+import brand29 from "./Brands/Picsart_26-02-20_14-43-58-038.png";
+import brand30 from "./Brands/Picsart_26-02-20_14-45-12-779 (1).png";
+
+const brandLogos = [
+  brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10,
+  brand11, brand12, brand13, brand14, brand15, brand16, brand17, brand18, brand19, brand20,
+  brand21, brand22, brand23, brand24, brand25, brand26, brand27, brand28, brand29, brand30
+];
+
 const App = () => {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
@@ -204,28 +241,17 @@ const App = () => {
 
       {/* CLIENT LIST */}
       <section className="clients-section">
-        <h2 className="section-heading-dark reveal">BRANDS I'VE WORKED WITH</h2>
-        <div className="clients-grid reveal">
-          <div className="client-logo">ZARA</div>
-          <div className="client-logo light">H&amp;M</div>
-          <div className="client-logo">MANGO</div>
-          <div className="client-logo light">ONLY</div>
-          <div className="client-logo">STARBUCKS</div>
-          <div className="client-logo light">CAFÉ LIFE</div>
-          <div className="client-logo">IKEA</div>
-          <div className="client-logo light">PEPPERFRY</div>
-          <div className="client-logo">MYNTRA</div>
-          <div className="client-logo light">AJIO</div>
-          <div className="client-logo">NYKAA</div>
-          <div className="client-logo light">BEWAKOOF</div>
-          <div className="client-logo">URBANIC</div>
-          <div className="client-logo light">SNITCH</div>
-          <div className="client-logo">CAMPUS SUTRA</div>
-          <div className="client-logo light">WESTSIDE</div>
-          <div className="client-logo">LENSKART</div>
-          <div className="client-logo light">BOAT</div>
-          <div className="client-logo">NOISE</div>
-          <div className="client-logo light">PLUM</div>
+        <h2 className="section-heading-dark reveal visible">BRANDS I'VE WORKED WITH</h2>
+        <div className="clients-grid reveal visible">
+          {brandLogos.map((logo, index) => (
+            <div key={index} className={`client-logo ${index % 2 === 1 ? 'light' : ''}`}>
+              <img
+                src={logo}
+                alt="Brand Logo"
+                className="brand-img"
+              />
+            </div>
+          ))}
         </div>
         <p
           style={{
