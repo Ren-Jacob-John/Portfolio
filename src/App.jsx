@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
+import cafe1 from "./Cafe Content/cafe_1.mp4";
+import cafe2 from "./Cafe Content/cafe_2.mp4";
+import cafe3 from "./Cafe Content/cafe_3.mp4";
+import cafe4 from "./Cafe Content/cafe_4.mp4";
+import cafe5 from "./Cafe Content/cafe_5.mp4";
+
 const App = () => {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
@@ -383,243 +389,244 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div >
 
-      {/* Home Decor */ }
-      < div className = "reveal" >
-        <><div className="category-heading">🏠 HOME DECOR CONTENT</div><div className="videos-grid">
-          <div
-            className="video-thumb"
-            style={{ background: "linear-gradient(135deg,#d4c5b2,#8b7355)" }}
-          >
-            <div className="brand-badge">IKEA</div>
-            <div className="thumb-overlay">
-              <div className="thumb-play">▶</div>
-              <span>View Project</span>
+        {/* Home Decor */}
+        <div className="reveal">
+          <div className="category-heading">🏠 HOME DECOR CONTENT</div>
+          <div className="videos-grid">
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#d4c5b2,#8b7355)" }}
+            >
+              <div className="brand-badge">IKEA</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">IKEA</div>
             </div>
-            <div className="thumb-label">IKEA</div>
-          </div>
-          <div
-            className="video-thumb"
-            style={{ background: "linear-gradient(135deg,#2d4a3e,#c8a96e)" }}
-          >
-            <div className="brand-badge">PEPPERFRY</div>
-            <div className="thumb-overlay">
-              <div className="thumb-play">▶</div>
-              <span>View Project</span>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#2d4a3e,#c8a96e)" }}
+            >
+              <div className="brand-badge">PEPPERFRY</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">PEPPERFRY</div>
             </div>
-            <div className="thumb-label">PEPPERFRY</div>
-          </div>
-          <div
-            className="video-thumb"
-            style={{ background: "linear-gradient(135deg,#e8d5a3,#5a3e2b)" }}
-          >
-            <div className="brand-badge">URBAN LADDER</div>
-            <div className="thumb-overlay">
-              <div className="thumb-play">▶</div>
-              <span>View Project</span>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#e8d5a3,#5a3e2b)" }}
+            >
+              <div className="brand-badge">URBAN LADDER</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">URBAN LADDER</div>
             </div>
-            <div className="thumb-label">URBAN LADDER</div>
-          </div>
-          <div
-            className="video-thumb"
-            style={{ background: "linear-gradient(135deg,#3d3d3d,#e8c87a)" }}
-          >
-            <div className="brand-badge">GODREJ INTERIO</div>
-            <div className="thumb-overlay">
-              <div className="thumb-play">▶</div>
-              <span>View Project</span>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#3d3d3d,#e8c87a)" }}
+            >
+              <div className="brand-badge">GODREJ INTERIO</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">GODREJ INTERIO</div>
             </div>
-            <div className="thumb-label">GODREJ INTERIO</div>
           </div>
-        </div></>
-        </div >
+        </div>
 
-  {/* Paid Ads */ }
-  < div className = "reveal" >
-    <><div className="category-heading">📱 PAID ADS</div><div className="videos-grid">
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#1a1a1a,#c8a96e)" }}
-      >
-        <div className="brand-badge">NYKAA</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
+        {/* Paid Ads */}
+        <div className="reveal">
+          <div className="category-heading">📱 PAID ADS</div>
+          <div className="videos-grid">
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#1a1a1a,#c8a96e)" }}
+            >
+              <div className="brand-badge">NYKAA</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">NYKAA</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#0d3b6e,#e8d5a3)" }}
+            >
+              <div className="brand-badge">BOAT</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">BOAT</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#4a0080,#c8a96e)" }}
+            >
+              <div className="brand-badge">NOISE</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">NOISE</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#1c4a2b,#e8d5a3)" }}
+            >
+              <div className="brand-badge">PLUM</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">PLUM</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#5c1010,#c8a96e)" }}
+            >
+              <div className="brand-badge">BEWAKOOF</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">BEWAKOOF</div>
+            </div>
+          </div>
         </div>
-        <div className="thumb-label">NYKAA</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#0d3b6e,#e8d5a3)" }}
-      >
-        <div className="brand-badge">BOAT</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">BOAT</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#4a0080,#c8a96e)" }}
-      >
-        <div className="brand-badge">NOISE</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">NOISE</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#1c4a2b,#e8d5a3)" }}
-      >
-        <div className="brand-badge">PLUM</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">PLUM</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#5c1010,#c8a96e)" }}
-      >
-        <div className="brand-badge">BEWAKOOF</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">BEWAKOOF</div>
-      </div>
-    </div></>
-        </div >
 
-  {/* Organic Ads */ }
-  < div className = "reveal" >
-    <><div className="category-heading">🌿 ORGANIC CONTENT</div><div className="videos-grid">
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#2d5a27,#c8a96e)" }}
-      >
-        <div className="brand-badge">WESTSIDE</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
+        {/* Organic Content */}
+        <div className="reveal">
+          <div className="category-heading">🌿 ORGANIC CONTENT</div>
+          <div className="videos-grid">
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#2d5a27,#c8a96e)" }}
+            >
+              <div className="brand-badge">WESTSIDE</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">WESTSIDE</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#1a3a5c,#e8d5a3)" }}
+            >
+              <div className="brand-badge">CAMPUS SUTRA</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">CAMPUS SUTRA</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#5a2d82,#c8a96e)" }}
+            >
+              <div className="brand-badge">SNITCH</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">SNITCH</div>
+            </div>
+            <div
+              className="video-thumb"
+              style={{ background: "linear-gradient(135deg,#3d1a00,#e8d5a3)" }}
+            >
+              <div className="brand-badge">LENSKART</div>
+              <div className="thumb-overlay">
+                <div className="thumb-play">▶</div>
+                <span>View Project</span>
+              </div>
+              <div className="thumb-label">LENSKART</div>
+            </div>
+          </div>
         </div>
-        <div className="thumb-label">WESTSIDE</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#1a3a5c,#e8d5a3)" }}
-      >
-        <div className="brand-badge">CAMPUS SUTRA</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">CAMPUS SUTRA</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#5a2d82,#c8a96e)" }}
-      >
-        <div className="brand-badge">SNITCH</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">SNITCH</div>
-      </div>
-      <div
-        className="video-thumb"
-        style={{ background: "linear-gradient(135deg,#3d1a00,#e8d5a3)" }}
-      >
-        <div className="brand-badge">LENSKART</div>
-        <div className="thumb-overlay">
-          <div className="thumb-play">▶</div>
-          <span>View Project</span>
-        </div>
-        <div className="thumb-label">LENSKART</div>
-      </div>
-    </div></>
-        </div >
-      </section >
+      </section>
 
-  {/* CONTACT */ }
-  < section className = "contact-section" id = "contact" >
-    <><div className="contact-bg">
-      <div className="contact-left">
-        <h2 className="contact-heading">
-          LET'S
-          <br />
-          WORK
-          <br />
-          TOGETHER
-        </h2>
-        <a href="mailto:stevevijay360@gmail.com" className="contact-email">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-          STEVEVIJAY360@GMAIL.COM
-        </a>
-        <a href="mailto:stevevijay360@gmail.com" className="contact-btn">
-          GET IN TOUCH
-        </a>
-      </div>
-      <div className="contact-right">
-        <div className="contact-socials">
-          <a
-            href="https://www.instagram.com/_.stevehh._"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-soc"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-            </svg>
-          </a>
-          <a
-            href="https://www.youtube.com/@GoddamnSteve"
-            target="_blank"
-            rel="noreferrer"
-            className="contact-soc"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-            </svg>
-          </a>
+      {/* CONTACT */}
+      <section className="contact-section" id="contact">
+        <div className="contact-bg">
+          <div className="contact-left">
+            <h2 className="contact-heading">
+              LET'S
+              <br />
+              WORK
+              <br />
+              TOGETHER
+            </h2>
+            <a href="mailto:stevevijay360@gmail.com" className="contact-email">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              STEVEVIJAY360@GMAIL.COM
+            </a>
+            <a href="mailto:stevevijay360@gmail.com" className="contact-btn">
+              GET IN TOUCH
+            </a>
+          </div>
+          <div className="contact-right">
+            <div className="contact-socials">
+              <a
+                href="https://www.instagram.com/_.stevehh._"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-soc"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@GoddamnSteve"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-soc"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+            </div>
+            <p className="contact-soc-label">STEVEVIJAY360@GMAIL.COM</p>
+          </div>
         </div>
-        <p className="contact-soc-label">STEVEVIJAY360@GMAIL.COM</p>
-      </div>
-    </div><div className="footer">
-        <p
-          className="nav-logo"
-          style={{
-            fontFamily: "'Bebas Neue',sans-serif",
-            fontSize: "16px",
-            letterSpacing: "4px",
-            color: "rgba(255,255,255,0.3)",
-          }}
-        >
-          STEVEVIJAY
-        </p>
-        <p>© 2026 STEVE VIJAY. ALL RIGHTS RESERVED.</p>
-      </div></>
-      </section >
+        <div className="footer">
+          <p
+            className="nav-logo"
+            style={{
+              fontFamily: "'Bebas Neue',sans-serif",
+              fontSize: "16px",
+              letterSpacing: "4px",
+              color: "rgba(255,255,255,0.3)",
+            }}
+          >
+            STEVEVIJAY
+          </p>
+          <p>© 2026 STEVE VIJAY. ALL RIGHTS RESERVED.</p>
+        </div>
+      </section>
     </>
   );
 };
 
 export default App;
-
