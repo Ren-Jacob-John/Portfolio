@@ -343,7 +343,7 @@ const App = () => {
         <h2 className="section-heading-dark reveal visible">BRANDS I'VE WORKED WITH</h2>
         <div className="clients-grid reveal visible">
           {brandLogos.map((logo, index) => (
-            <div key={index} className={`client-logo ${index % 2 === 1 ? 'light' : ''}`}>
+            <div key={index} className="client-logo">
               <img
                 src={logo}
                 alt="Brand Logo"
