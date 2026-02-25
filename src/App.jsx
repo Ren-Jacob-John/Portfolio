@@ -1,43 +1,63 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-import cafe1 from "./Cafe Content/cafe_1.mp4";
-import cafe2 from "./Cafe Content/cafe_2.mp4";
-import cafe3 from "./Cafe Content/cafe_3.mp4";
-import cafe4 from "./Cafe Content/cafe_4.mp4";
-import cafe5 from "./Cafe Content/cafe_5.mp4";
+import cafe1 from "./Cafe Content/cafe1.mp4";
+import cafe2 from "./Cafe Content/cafe2.mp4";
+import cafe3 from "./Cafe Content/cafe3.mp4";
+import cafe4 from "./Cafe Content/cafe4.mp4";
+import cafe5 from "./Cafe Content/cafe5.mp4";
 import introVideo from "./Intro/intro.mp4";
 
-import brand1 from "./Brands/Picsart_26-02-20_12-22-19-143.jpg.jpeg";
-import brand2 from "./Brands/Picsart_26-02-20_12-24-21-015.jpg.jpeg";
-import brand3 from "./Brands/Picsart_26-02-20_12-26-38-852.jpg.jpeg";
-import brand4 from "./Brands/Picsart_26-02-20_12-28-17-115.png";
-import brand5 from "./Brands/Picsart_26-02-20_12-30-23-316.jpg.jpeg";
-import brand6 from "./Brands/Picsart_26-02-20_12-34-11-670.jpg.jpeg";
-import brand7 from "./Brands/Picsart_26-02-20_12-35-05-284.jpg.jpeg";
-import brand8 from "./Brands/Picsart_26-02-20_12-39-42-516.jpg.jpeg";
-import brand9 from "./Brands/Picsart_26-02-20_12-51-45-636.jpg (1).jpeg";
-import brand10 from "./Brands/Picsart_26-02-20_12-53-45-234.jpg.jpeg";
-import brand11 from "./Brands/Picsart_26-02-20_12-55-30-651.jpg.jpeg";
-import brand12 from "./Brands/Picsart_26-02-20_12-57-55-379.jpg.jpeg";
-import brand13 from "./Brands/Picsart_26-02-20_12-59-48-667.jpg.jpeg";
-import brand14 from "./Brands/Picsart_26-02-20_13-01-44-210.jpg.jpeg";
-import brand15 from "./Brands/Picsart_26-02-20_13-11-56-135.png";
-import brand16 from "./Brands/Picsart_26-02-20_13-13-55-320 (1).png";
-import brand17 from "./Brands/Picsart_26-02-20_13-16-12-487 (1).png";
-import brand18 from "./Brands/Picsart_26-02-20_13-55-47-859 (1).png";
-import brand19 from "./Brands/Picsart_26-02-20_13-56-24-761.png";
-import brand20 from "./Brands/Picsart_26-02-20_13-57-57-901 (1).png";
-import brand21 from "./Brands/Picsart_26-02-20_14-07-26-504.jpg (1).jpeg";
-import brand22 from "./Brands/Picsart_26-02-20_14-11-41-610 (1).png";
-import brand23 from "./Brands/Picsart_26-02-20_14-14-40-335.png";
-import brand24 from "./Brands/Picsart_26-02-20_14-17-34-465.png";
-import brand25 from "./Brands/Picsart_26-02-20_14-23-11-465 (1).png";
-import brand26 from "./Brands/Picsart_26-02-20_14-30-51-791.png";
-import brand27 from "./Brands/Picsart_26-02-20_14-34-28-568 (1).png";
-import brand28 from "./Brands/Picsart_26-02-20_14-37-46-848.png";
-import brand29 from "./Brands/Picsart_26-02-20_14-43-58-038.png";
-import brand30 from "./Brands/Picsart_26-02-20_14-45-12-779 (1).png";
+import fashion1 from "./Fashion Content/v1.mp4";
+import fashion2 from "./Fashion Content/v2.mp4";
+import fashion3 from "./Fashion Content/v3.mp4";
+import fashion4 from "./Fashion Content/v4.mp4";
+import fashion5 from "./Fashion Content/v5.mp4";
+import fashion6 from "./Fashion Content/v6.mp4";
+import fashion7 from "./Fashion Content/v7.mp4";
+import fashion8 from "./Fashion Content/v8.mp4";
+import fashion9 from "./Fashion Content/v9.mp4";
+import fashion10 from "./Fashion Content/v10.mp4";
+import fashion11 from "./Fashion Content/v11.mp4";
+import fashion12 from "./Fashion Content/v12.mp4";
+
+import decor1 from "./Home Decor Content/Vid1.mp4";
+import decor2 from "./Home Decor Content/Vid2.mp4";
+import decor3 from "./Home Decor Content/Vid3.mp4";
+import decor4 from "./Home Decor Content/Vid4.mp4";
+import decor5 from "./Home Decor Content/vid5.mp4";
+import decor6 from "./Home Decor Content/Vid6.mp4";
+
+import brand1 from "./Brands/2D_ART_CAFE.jpeg";
+import brand2 from "./Brands/CROSCROW_OFFICAL.jpeg";
+import brand3 from "./Brands/CRUMBZCAFE.jpeg";
+import brand4 from "./Brands/FARWEST_IN.png";
+import brand5 from "./Brands/FEJI.png";
+import brand6 from "./Brands/FUTURESAINTS_IN.jpeg";
+import brand7 from "./Brands/HAVN.jpeg";
+import brand8 from "./Brands/HIIQIFY.png";
+import brand9 from "./Brands/IZFWORLD.jpeg";
+import brand10 from "./Brands/JUST_LOAF.png";
+import brand11 from "./Brands/KNYARI_IN.jpeg";
+import brand12 from "./Brands/LEWKK_IN.png";
+import brand13 from "./Brands/LUXE_BISTRO.png";
+import brand14 from "./Brands/MIDNIGHT_GOTHICSS.jpeg";
+import brand15 from "./Brands/Picsart_26-02-20_12-51-45-636.jpg (1).jpeg";
+import brand16 from "./Brands/Picsart_26-02-20_13-16-12-487 (1).png";
+import brand17 from "./Brands/Picsart_26-02-20_13-55-47-859 (1).png";
+import brand18 from "./Brands/Picsart_26-02-20_13-56-24-761.png";
+import brand19 from "./Brands/Picsart_26-02-20_13-57-57-901 (1).png";
+import brand20 from "./Brands/Picsart_26-02-20_14-07-26-504.jpg (1).jpeg";
+import brand21 from "./Brands/RAWBARE_CO.png";
+import brand22 from "./Brands/REAWAKENTHEORY.jpeg";
+import brand23 from "./Brands/REDCAARD.png";
+import brand24 from "./Brands/ROASTOWN.jpeg";
+import brand25 from "./Brands/SHAKESPEARESLIVE.png";
+import brand26 from "./Brands/STORE_AOZORA.png";
+import brand27 from "./Brands/THE_LAZY_BUNS.jpeg";
+import brand28 from "./Brands/UNIT01LABS.png";
+import brand29 from "./Brands/WEARE_NOTICE.png";
+import brand30 from "./Brands/WEARKINOH.jpeg";
 
 const brandLogos = [
   brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10,
@@ -45,7 +65,42 @@ const brandLogos = [
   brand21, brand22, brand23, brand24, brand25, brand26, brand27, brand28, brand29, brand30
 ];
 
+const VideoCard = ({ src, badge, label }) => {
+  const [aspectRatio, setAspectRatio] = React.useState(null);
+
+  const handleLoadedMetadata = (e) => {
+    const { videoWidth, videoHeight } = e.target;
+    setAspectRatio(videoWidth / videoHeight);
+  };
+
+  return (
+    <div
+      className="video-thumb"
+      style={aspectRatio ? { aspectRatio: `${aspectRatio}` } : {}}
+    >
+      <video
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        onLoadedMetadata={handleLoadedMetadata}
+        className="thumb-colors"
+        style={{ objectFit: 'cover' }}
+      />
+      {badge && <div className="brand-badge">{badge}</div>}
+      <div className="thumb-overlay">
+        <div className="thumb-play">▶</div>
+        <span>View Project</span>
+      </div>
+      {label && <div className="thumb-label">{label}</div>}
+    </div>
+  );
+};
+
 const App = () => {
+  const [introRatio, setIntroRatio] = React.useState(null);
+
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver(
@@ -183,29 +238,69 @@ const App = () => {
         <div className="why-bg-text">WHY ME?</div>
         <h2 className="section-heading reveal">WHY WORK WITH ME?</h2>
         <div className="why-grid reveal">
-          <div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              <div className="stat-pill">
-                <span className="num">50+</span>
-                <span className="label">Clients Worked With</span>
+          <div className="why-stats-col">
+            <div className="stat-card">
+              <div className="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
               </div>
-              <div className="stat-pill">
+              <div className="stat-info">
+                <span className="num">30</span>
+                <span className="label">Brand Partners</span>
+              </div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m16 16 3-8 3 8c-.87.06-1.7.21-2.5.44l-1.5 3.56-1.5-3.56c-.8-.23-1.63-.38-2.5-.44Z" />
+                  <path d="M7 21h10" />
+                  <path d="M12 21V11" />
+                  <path d="M15 11h-6" />
+                  <path d="M12 7V3" />
+                  <path d="M12 3H8" />
+                  <path d="m22 21-2-5" />
+                  <path d="m2 21 2-5" />
+                </svg>
+              </div>
+              <div className="stat-info">
                 <span className="num">200+</span>
-                <span className="label">Videos Created</span>
+                <span className="label">Assets Delivered</span>
               </div>
-              <div className="stat-pill">
+            </div>
+            <div className="stat-card">
+              <div className="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <div className="stat-info">
                 <span className="num">3+</span>
-                <span className="label">Years of Experience</span>
+                <span className="label">Years Expertise</span>
               </div>
             </div>
           </div>
-          <div className="video-embed" style={{ padding: 0, overflow: 'hidden' }}>
+          <div
+            className="video-embed"
+            style={{
+              padding: 0,
+              overflow: 'hidden',
+              aspectRatio: introRatio || '16 / 9'
+            }}
+          >
             <video
               src={introVideo}
               autoPlay
               loop
               muted
               playsInline
+              onLoadedMetadata={(e) => {
+                const { videoWidth, videoHeight } = e.target;
+                setIntroRatio(videoWidth / videoHeight);
+              }}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -368,168 +463,44 @@ const App = () => {
       <section className="work-section">
         <h2 className="work-heading reveal">MY WORK</h2>
 
-        {/* Fashion */}
         <div className="reveal">
           <div className="category-heading">✦ FASHION CONTENT</div>
           <div className="videos-grid">
-            <div className="video-thumb">
-              <video src={cafe1} autoPlay loop muted playsInline className="thumb-colors" style={{ objectFit: 'cover' }} />
-              <div className="brand-badge">CAFE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">LUXE BISTRO</div>
-            </div>
-            <div className="video-thumb">
-              <video src={cafe2} autoPlay loop muted playsInline className="thumb-colors" style={{ objectFit: 'cover' }} />
-              <div className="brand-badge">CAFE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">ROASTOWN</div>
-            </div>
-            <div className="video-thumb">
-              <video src={cafe3} autoPlay loop muted playsInline className="thumb-colors" style={{ objectFit: 'cover' }} />
-              <div className="brand-badge">CAFE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">2D ART CAFE</div>
-            </div>
-            <div className="video-thumb">
-              <video src={cafe4} autoPlay loop muted playsInline className="thumb-colors" style={{ objectFit: 'cover' }} />
-              <div className="brand-badge">CAFE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">JUST LOAF</div>
-            </div>
-            <div className="video-thumb">
-              <video src={cafe5} autoPlay loop muted playsInline className="thumb-colors" style={{ objectFit: 'cover' }} />
-              <div className="brand-badge">CAFE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">CRUMBZ CAFE</div>
-            </div>
+            <VideoCard src={fashion1} badge="STYLE" label="FARWEST" />
+            <VideoCard src={fashion3} badge="STYLE" label="FASHION ADVICE" />
+            <VideoCard src={fashion4} badge="STYLE" label="FIT PICKS" />
+            <VideoCard src={fashion5} badge="STYLE" label="JERSEY TREND" />
+            <VideoCard src={fashion6} badge="STYLE" label="CROSCROW" />
+            <VideoCard src={fashion7} badge="STYLE" label="MIDNIGHT GOTHIC" />
+            <VideoCard src={fashion8} badge="STYLE" label="KNYARI" />
+            <VideoCard src={fashion9} badge="STYLE" label="URBAN FIT" />
+            <VideoCard src={fashion10} badge="STYLE" label="STREET LOOK" />
+            <VideoCard src={fashion11} badge="STYLE" label="DAILY FITS" />
+            <VideoCard src={fashion12} badge="STYLE" label="IZFWORLD" />
+            <VideoCard src={fashion2} badge="STYLE" label="HOODIE DROP" />
           </div>
         </div>
 
-        {/* Home Decor */}
+        <div className="reveal">
+          <div className="category-heading">☕ CAFE CONTENT</div>
+          <div className="videos-grid">
+            <VideoCard src={cafe1} badge="CAFE" label="ROASTOWN" />
+            <VideoCard src={cafe2} badge="CAFE" label="2D ART CAFE" />
+            <VideoCard src={cafe3} badge="CAFE" label="JUST LOAF" />
+            <VideoCard src={cafe4} badge="CAFE" label="CRUMBZ CAFE" />
+            <VideoCard src={cafe5} badge="CAFE" label="LUXE BISTRO" />
+          </div>
+        </div>
+
         <div className="reveal">
           <div className="category-heading">🏠 HOME DECOR CONTENT</div>
           <div className="videos-grid">
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#d4c5b2,#8b7355)" }}
-            >
-              <div className="brand-badge">IKEA</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">IKEA</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#2d4a3e,#c8a96e)" }}
-            >
-              <div className="brand-badge">PEPPERFRY</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">PEPPERFRY</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#e8d5a3,#5a3e2b)" }}
-            >
-              <div className="brand-badge">URBAN LADDER</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">URBAN LADDER</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#3d3d3d,#e8c87a)" }}
-            >
-              <div className="brand-badge">GODREJ INTERIO</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">GODREJ INTERIO</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Paid Ads */}
-        <div className="reveal">
-          <div className="category-heading">📱 PAID ADS</div>
-          <div className="videos-grid">
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#1a1a1a,#c8a96e)" }}
-            >
-              <div className="brand-badge">NYKAA</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">NYKAA</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#0d3b6e,#e8d5a3)" }}
-            >
-              <div className="brand-badge">BOAT</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">BOAT</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#4a0080,#c8a96e)" }}
-            >
-              <div className="brand-badge">NOISE</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">NOISE</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#1c4a2b,#e8d5a3)" }}
-            >
-              <div className="brand-badge">PLUM</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">PLUM</div>
-            </div>
-            <div
-              className="video-thumb"
-              style={{ background: "linear-gradient(135deg,#5c1010,#c8a96e)" }}
-            >
-              <div className="brand-badge">BEWAKOOF</div>
-              <div className="thumb-overlay">
-                <div className="thumb-play">▶</div>
-                <span>View Project</span>
-              </div>
-              <div className="thumb-label">BEWAKOOF</div>
-            </div>
+            <VideoCard src={decor1} badge="DECOR" label="IKEA STYLE" />
+            <VideoCard src={decor2} badge="DECOR" label="PEPPERFRY" />
+            <VideoCard src={decor3} badge="DECOR" label="URBAN LADDER" />
+            <VideoCard src={decor4} badge="DECOR" label="GODREJ" />
+            <VideoCard src={decor5} badge="DECOR" label="HOME SETUP" />
+            <VideoCard src={decor6} badge="DECOR" label="MINIMALIST" />
           </div>
         </div>
 
