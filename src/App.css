@@ -174,33 +174,28 @@ nav {
 }
 
 .hero-img-wrap {
-  width: 300px;
-  height: 380px;
-  border-radius: 8px;
+  width: 320px;
+  height: 420px;
+  border-radius: 20px;
   overflow: hidden;
-  background: var(--glass);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(5px);
   position: relative;
   border: 1px solid var(--toffee-light);
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
 }
 
-.hero-img-placeholder {
+.hero-img {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 12px;
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  object-fit: cover;
+  object-position: center bottom;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  transition: transform 0.5s ease;
 }
 
-.hero-img-placeholder svg {
-  opacity: 0.4;
+.hero-img-wrap:hover .hero-img {
+  transform: scale(1.05);
 }
 
 .hero-right {
@@ -276,6 +271,17 @@ nav {
   padding: 80px 60px;
   position: relative;
   overflow: hidden;
+}
+
+.why-steve-img {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  height: 120%;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(1) contrast(1.2);
 }
 
 .why-bg-text {

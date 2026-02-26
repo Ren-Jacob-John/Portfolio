@@ -58,6 +58,10 @@ import brand27 from "./Brands/THE_LAZY_BUNS.jpeg";
 import brand28 from "./Brands/UNIT01LABS.png";
 import brand29 from "./Brands/WEARE_NOTICE.png";
 import brand30 from "./Brands/WEARKINOH.jpeg";
+import steveHero from "./Pictures/steve_hero.png";
+import steveAesthetic from "./Pictures/steve_aesthetic.png";
+
+
 
 const brandLogos = [
   brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10,
@@ -190,12 +194,7 @@ const App = () => {
 
         <div className="hero-center">
           <div className="hero-img-wrap">
-            <div className="hero-img-placeholder">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z" />
-              </svg>
-              <span>Your Photo</span>
-            </div>
+            <img src={steveHero} alt="Steve Vijay" className="hero-img" />
           </div>
         </div>
 
@@ -236,6 +235,7 @@ const App = () => {
       {/* WHY ME */}
       <section className="why-me">
         <div className="why-bg-text">WHY ME?</div>
+        <img src={steveAesthetic} alt="Steve Aesthetic" className="why-steve-img" />
         <h2 className="section-heading reveal">WHY WORK WITH ME?</h2>
         <div className="why-grid reveal">
           <div className="why-stats-col">
