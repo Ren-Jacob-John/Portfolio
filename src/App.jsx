@@ -337,6 +337,33 @@ const App = () => {
         </div>
       </section>
 
+      {/* CLIENT LIST */}
+      <section className="clients-section">
+        <h2 className="section-heading-dark reveal visible">BRANDS I'VE WORKED WITH</h2>
+        <div className="clients-grid reveal visible">
+          {brandLogos.map((logo, index) => (
+            <div key={index} className="client-logo">
+              <img
+                src={logo}
+                alt="Brand Logo"
+                className="brand-img"
+              />
+            </div>
+          ))}
+        </div>
+        <p
+          style={{
+            textAlign: "right",
+            marginTop: "20px",
+            fontSize: "14px",
+            fontWeight: 600,
+            letterSpacing: "2px",
+          }}
+        >
+          + MORE!
+        </p>
+      </section>
+
       {/* MY WORK */}
       <section className="work-section">
         <h2 className="work-heading reveal">MY WORK</h2>
@@ -345,7 +372,7 @@ const App = () => {
           <div className="category-heading">✦ FASHION CONTENT</div>
           <div className="videos-grid">
             <VideoCard src={fashion1} badge="STYLE" label="FARWEST" />
-            <VideoCard src={fashion3} badge="STYLE" label="FASHION ADVICE" />
+            <VideoCard src={fashion3} badge="STYLE" label="RAWBARE" />
             <VideoCard src={fashion4} badge="STYLE" label="FIT PICKS" />
             <VideoCard src={fashion5} badge="STYLE" label="JERSEY TREND" />
             <VideoCard src={fashion6} badge="STYLE" label="CROSCROW" />
