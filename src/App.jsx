@@ -126,7 +126,7 @@ const App = () => {
     <>
       {/* NAVBAR */}
       <nav>
-        <div className="nav-logo">STEVEVIJAY</div>
+        <div className="nav-logo">STEVE VIJAY</div>
         <div className="nav-links">
           <a
             href="https://www.instagram.com/_.stevehh._"
@@ -170,7 +170,7 @@ const App = () => {
       {/* HERO */}
       <section className="hero">
         <div className="hero-left">
-          <p className="hero-subtitle">Content Creation &amp; Creative Strategy</p>
+          <p className="hero-subtitle">Content Creator &amp; UGC Influncer</p>
           <h1 className="hero-name">
             STEVE
             <br />
@@ -224,10 +224,9 @@ const App = () => {
             </a>
           </div>
           <div className="hero-bio">
-            I'm Steve Vijay — a fashion and lifestyle creator focused on aesthetic storytelling,
-            styling, and high-impact visual content. From outfit transformations to café features and
-            product showcases, I create content that feels natural, visually refined, and built to
-            convert attention into trust.
+            I’m Steve Vijay, a fashion and lifestyle creator focused on aesthetic storytelling, styling, and high-impact visual content.
+            As a content creator, editor, and UGC influencer, I craft visuals from concept to final cut, ensuring every frame feels natural, visually refined, and built to convert attention into trust.
+            From outfit transformations to café features and product showcases, I create content that doesn’t just look good, it connects.
           </div>
         </div>
       </section>
@@ -249,7 +248,7 @@ const App = () => {
                 </svg>
               </div>
               <div className="stat-info">
-                <span className="num">30</span>
+                <span className="num">30+</span>
                 <span className="label">Brand Partners</span>
               </div>
             </div>
@@ -267,7 +266,7 @@ const App = () => {
                 </svg>
               </div>
               <div className="stat-info">
-                <span className="num">200+</span>
+                <span className="num">100+</span>
                 <span className="label">Assets Delivered</span>
               </div>
             </div>
@@ -278,7 +277,7 @@ const App = () => {
                 </svg>
               </div>
               <div className="stat-info">
-                <span className="num">3+</span>
+                <span className="num">2</span>
                 <span className="label">Years Expertise</span>
               </div>
             </div>
@@ -311,7 +310,7 @@ const App = () => {
               </div>
               <div className="analytics-row">
                 <span>▶ Reach</span>
-                <strong>1.2M+</strong>
+                <strong>200K+</strong>
               </div>
               <div className="analytics-row">
                 <span>♥ Engagement Rate</span>
@@ -319,142 +318,21 @@ const App = () => {
               </div>
               <div className="analytics-row">
                 <span>▶ Avg Views/Video</span>
-                <strong>45K+</strong>
+                <strong>8K+</strong>
               </div>
               <div className="analytics-row">
                 <span>💬 Comments</span>
-                <strong>1.2K+</strong>
+                <strong>50+</strong>
               </div>
               <div className="analytics-row">
                 <span>↗ Shares</span>
-                <strong>890+</strong>
+                <strong>750+</strong>
               </div>
               <div className="analytics-row">
                 <span>🔖 Saves</span>
-                <strong>3.1K+</strong>
+                <strong>250+</strong>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CLIENT LIST */}
-      <section className="clients-section">
-        <h2 className="section-heading-dark reveal visible">BRANDS I'VE WORKED WITH</h2>
-        <div className="clients-grid reveal visible">
-          {brandLogos.map((logo, index) => (
-            <div key={index} className="client-logo">
-              <img
-                src={logo}
-                alt="Brand Logo"
-                className="brand-img"
-              />
-            </div>
-          ))}
-        </div>
-        <p
-          style={{
-            textAlign: "right",
-            marginTop: "20px",
-            fontSize: "14px",
-            fontWeight: 600,
-            letterSpacing: "2px",
-          }}
-        >
-          + MORE!
-        </p>
-      </section>
-
-      {/* CLIENT FEEDBACK */}
-      <section className="feedback-section">
-        <h2 className="feedback-heading reveal">CLIENT LOVE</h2>
-        <div className="testimonials-track">
-          <div className="testimonial-card">
-            <div className="t-header">
-              <div className="t-avatar">A</div>
-              <div>
-                <div className="t-name">Arun Menon</div>
-                <div className="t-brand">Fashion Brand Kerala</div>
-              </div>
-            </div>
-            <div className="t-stars">★★★★★</div>
-            <p className="t-text">
-              Working with Steve was an absolute pleasure. His aesthetic sensibility is unmatched —
-              he understood our brand voice immediately and delivered content that surpassed our
-              expectations. Our engagement went up 40% the week we posted his content.
-            </p>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="t-header">
-              <div className="t-avatar" style={{ background: "#c8a96e" }}>
-                P
-              </div>
-              <div>
-                <div className="t-name">Priya Nair</div>
-                <div className="t-brand">The Artisan Café, Thrissur</div>
-              </div>
-            </div>
-            <div className="t-stars">★★★★★</div>
-            <p className="t-text">
-              Steve's café content was stunning. He has this natural gift for capturing atmosphere
-              and mood. Our weekend footfall increased noticeably after his reel went viral. Will
-              definitely work with him again!
-            </p>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="t-header">
-              <div className="t-avatar" style={{ background: "#2d2d2d", color: "#fff" }}>
-                R
-              </div>
-              <div>
-                <div className="t-name">Rahul Sharma</div>
-                <div className="t-brand">HomeDecor Brand</div>
-              </div>
-            </div>
-            <div className="t-stars">★★★★★</div>
-            <p className="t-text">
-              We hired Steve for our home decor campaign and the results were beyond what we
-              imagined. Professional, on-time, and incredibly creative. His content felt genuine and
-              our audience connected with it instantly.
-            </p>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="t-header">
-              <div className="t-avatar" style={{ background: "#8b6914" }}>
-                S
-              </div>
-              <div>
-                <div className="t-name">Sara Thomas</div>
-                <div className="t-brand">Lifestyle Brand, Bangalore</div>
-              </div>
-            </div>
-            <div className="t-stars">★★★★★</div>
-            <p className="t-text">
-              Steve is not just a creator — he's a strategic thinker. He asked smart questions about
-              our goals, created a concept, and executed it beautifully. The video felt natural and
-              showcased our product's personality perfectly.
-            </p>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="t-header">
-              <div className="t-avatar" style={{ background: "#1a5276", color: "#fff" }}>
-                M
-              </div>
-              <div>
-                <div className="t-name">Meera Krishnan</div>
-                <div className="t-brand">Fashion Week Kerala</div>
-              </div>
-            </div>
-            <div className="t-stars">★★★★★</div>
-            <p className="t-text">
-              Exceptional work! Steve covered our event beautifully. His eye for detail, lighting,
-              and composition is remarkable. We'd absolutely recommend him to any brand looking for
-              impactful UGC content.
-            </p>
           </div>
         </div>
       </section>
