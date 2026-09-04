@@ -57,7 +57,6 @@ const VideoCard = ({ src, badge, label }) => {
         className="thumb-colors"
         style={{ objectFit: 'cover' }}
       />
-      {badge && <div className="brand-badge">{badge}</div>}
       <div className="thumb-overlay">
         <div className="thumb-play">▶</div>
         <span>View Project</span>
@@ -415,7 +414,6 @@ const App = () => {
               className="video-thumb"
               style={{ background: "linear-gradient(135deg,#2d5a27,#c8a96e)" }}
             >
-              <div className="brand-badge">WESTSIDE</div>
               <div className="thumb-overlay">
                 <div className="thumb-play">▶</div>
                 <span>View Project</span>
@@ -426,7 +424,6 @@ const App = () => {
               className="video-thumb"
               style={{ background: "linear-gradient(135deg,#1a3a5c,#e8d5a3)" }}
             >
-              <div className="brand-badge">CAMPUS SUTRA</div>
               <div className="thumb-overlay">
                 <div className="thumb-play">▶</div>
                 <span>View Project</span>
@@ -437,7 +434,6 @@ const App = () => {
               className="video-thumb"
               style={{ background: "linear-gradient(135deg,#5a2d82,#c8a96e)" }}
             >
-              <div className="brand-badge">SNITCH</div>
               <div className="thumb-overlay">
                 <div className="thumb-play">▶</div>
                 <span>View Project</span>
@@ -448,7 +444,6 @@ const App = () => {
               className="video-thumb"
               style={{ background: "linear-gradient(135deg,#3d1a00,#e8d5a3)" }}
             >
-              <div className="brand-badge">LENSKART</div>
               <div className="thumb-overlay">
                 <div className="thumb-play">▶</div>
                 <span>View Project</span>
