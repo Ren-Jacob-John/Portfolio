@@ -1,86 +1,49 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-import cafe1 from "./Cafe Content/cafe1.mp4";
-import cafe2 from "./Cafe Content/cafe2.mp4";
-import cafe3 from "./Cafe Content/cafe3.mp4";
-import cafe4 from "./Cafe Content/cafe4.mp4";
-import cafe5 from "./Cafe Content/cafe5.mp4";
-import introVideo from "./Intro/intro.mp4";
+import {
+  cafe1, cafe2, cafe3, cafe4, cafe5,
+  introVideo,
+  fashion1, fashion2, fashion3, fashion4, fashion5, fashion6,
+  fashion7, fashion8, fashion9, fashion10, fashion11, fashion12,
+  decor1, decor2, decor3, decor4, decor5, decor6,
+  brandLogos,
+  steveHero, steveAesthetic,
+  handleMediaError
+} from "./assets.js";
 
-import fashion1 from "./Fashion Content/v1.mp4";
-import fashion2 from "./Fashion Content/v2.mp4";
-import fashion3 from "./Fashion Content/v3.mp4";
-import fashion4 from "./Fashion Content/v4.mp4";
-import fashion5 from "./Fashion Content/v5.mp4";
-import fashion6 from "./Fashion Content/v6.mp4";
-import fashion7 from "./Fashion Content/v7.mp4";
-import fashion8 from "./Fashion Content/v8.mp4";
-import fashion9 from "./Fashion Content/v9.mp4";
-import fashion10 from "./Fashion Content/v10.mp4";
-import fashion11 from "./Fashion Content/v11.mp4";
-import fashion12 from "./Fashion Content/v12.mp4";
-
-import decor1 from "./Home Decor Content/Vid1.mp4";
-import decor2 from "./Home Decor Content/Vid2.mp4";
-import decor3 from "./Home Decor Content/Vid3.mp4";
-import decor4 from "./Home Decor Content/Vid4.mp4";
-import decor5 from "./Home Decor Content/vid5.mp4";
-import decor6 from "./Home Decor Content/Vid6.mp4";
-
-import brand1 from "./Brands/boulangerie_art_cafe.png";
-import brand2 from "./Brands/crows.png";
-import brand3 from "./Brands/crumbz.png";
-import brand4 from "./Brands/FARWEST_IN.png";
-import brand5 from "./Brands/FEJI.png";
-import brand6 from "./Brands/futuresaints.png";
-import brand7 from "./Brands/havn.png";
-import brand8 from "./Brands/HIIQIFY.png";
-import brand9 from "./Brands/izf.png";
-import brand10 from "./Brands/JUST_LOAF.png";
-import brand11 from "./Brands/knyari.png";
-import brand12 from "./Brands/LEWKK_IN.png";
-import brand13 from "./Brands/LUXE_BISTRO.png";
-import brand14 from "./Brands/midnight_gothics.png";
-import brand15 from "./Brands/2.png";
-import brand16 from "./Brands/Picsart_26-02-20_13-16-12-487 (1).png";
-import brand17 from "./Brands/Picsart_26-02-20_13-55-47-859 (1).png";
-import brand18 from "./Brands/Picsart_26-02-20_13-56-24-761.png";
-import brand19 from "./Brands/Picsart_26-02-20_13-57-57-901 (1).png";
-import brand20 from "./Brands/qb.png";
-import brand21 from "./Brands/sc.png";
-import brand22 from "./Brands/reawaken.png";
-import brand23 from "./Brands/REDCAARD.png";
-import brand24 from "./Brands/roastown.png";
-import brand25 from "./Brands/SHAKESPEARESLIVE.png";
-import brand26 from "./Brands/STORE_AOZORA.png";
-import brand27 from "./Brands/the_lazy_buns.png";
-import brand28 from "./Brands/UNIT01LABS.png";
-import brand29 from "./Brands/WEARE_NOTICE.png";
-import brand30 from "./Brands/sin.png";
-import steveHero from "./Pictures/steve_hero.png";
-import steveAesthetic from "./Pictures/steve_aesthetic.png";
-
-
-
-const brandLogos = [
-  brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9, brand10,
-  brand11, brand12, brand13, brand14, brand15, brand16, brand17, brand18, brand19, brand20,
-  brand21, brand22, brand23, brand24, brand25, brand26, brand27, brand28, brand29, brand30
-];
+const VideoModalContext = React.createContext({ openVideo: () => {} });
 
 const VideoCard = ({ src, badge, label }) => {
   const [aspectRatio, setAspectRatio] = React.useState(null);
+  const { openVideo } = React.useContext(VideoModalContext);
 
   const handleLoadedMetadata = (e) => {
     const { videoWidth, videoHeight } = e.target;
-    setAspectRatio(videoWidth / videoHeight);
+    if (videoWidth && videoHeight) {
+      setAspectRatio(videoWidth / videoHeight);
+    }
+  };
+
+  const handleOpen = () => {
+    if (openVideo) {
+      openVideo(src, label, badge);
+    }
   };
 
   return (
     <div
       className="video-thumb"
       style={aspectRatio ? { aspectRatio: `${aspectRatio}` } : {}}
+      onClick={handleOpen}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleOpen();
+        }
+      }}
     >
       <video
         src={src}
@@ -88,6 +51,8 @@ const VideoCard = ({ src, badge, label }) => {
         loop
         muted
         playsInline
+        preload="metadata"
+        onError={handleMediaError}
         onLoadedMetadata={handleLoadedMetadata}
         className="thumb-colors"
         style={{ objectFit: 'cover' }}
@@ -104,6 +69,23 @@ const VideoCard = ({ src, badge, label }) => {
 
 const App = () => {
   const [introRatio, setIntroRatio] = React.useState(null);
+  const [activeVideo, setActiveVideo] = React.useState(null);
+
+  const openVideo = (src, label, badge) => {
+    setActiveVideo({ src, label, badge });
+  };
+
+  const closeVideo = () => {
+    setActiveVideo(null);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") closeVideo();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
@@ -123,7 +105,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <VideoModalContext.Provider value={{ openVideo }}>
       {/* NAVBAR */}
       <nav>
         <div className="nav-logo">STEVE VIJAY</div>
@@ -194,7 +176,12 @@ const App = () => {
 
         <div className="hero-center">
           <div className="hero-img-wrap">
-            <img src={steveHero} alt="Steve Vijay" className="hero-img" />
+            <img
+              src={steveHero}
+              alt="Steve Vijay"
+              className="hero-img"
+              onError={handleMediaError}
+            />
           </div>
         </div>
 
@@ -234,7 +221,12 @@ const App = () => {
       {/* WHY ME */}
       <section className="why-me">
         <div className="why-bg-text">WHY ME?</div>
-        <img src={steveAesthetic} alt="Steve Aesthetic" className="why-steve-img" />
+        <img
+          src={steveAesthetic}
+          alt="Steve Aesthetic"
+          className="why-steve-img"
+          onError={handleMediaError}
+        />
         <h2 className="section-heading reveal">WHY WORK WITH ME?</h2>
         <div className="why-grid reveal">
           <div className="why-stats-col">
@@ -296,9 +288,13 @@ const App = () => {
               loop
               muted
               playsInline
+              preload="metadata"
+              onError={handleMediaError}
               onLoadedMetadata={(e) => {
                 const { videoWidth, videoHeight } = e.target;
-                setIntroRatio(videoWidth / videoHeight);
+                if (videoWidth && videoHeight) {
+                  setIntroRatio(videoWidth / videoHeight);
+                }
               }}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -347,6 +343,8 @@ const App = () => {
                 src={logo}
                 alt="Brand Logo"
                 className="brand-img"
+                onError={handleMediaError}
+                loading="lazy"
               />
             </div>
           ))}
@@ -531,7 +529,39 @@ const App = () => {
           <p>© 2026 STEVE VIJAY. ALL RIGHTS RESERVED.</p>
         </div>
       </section>
-    </>
+
+      {/* Video Modal Lightbox */}
+      {activeVideo && (
+        <div className="video-modal-backdrop" onClick={closeVideo}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="video-modal-header">
+              <div className="video-modal-title-wrap">
+                {activeVideo.badge && (
+                  <span className="video-modal-badge">{activeVideo.badge}</span>
+                )}
+                <span className="video-modal-title">{activeVideo.label || "Project Preview"}</span>
+              </div>
+              <button
+                className="video-modal-close"
+                onClick={closeVideo}
+                aria-label="Close modal"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="video-modal-player-wrap">
+              <video
+                src={activeVideo.src}
+                controls
+                autoPlay
+                playsInline
+                onError={handleMediaError}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </VideoModalContext.Provider>
   );
 };
 
